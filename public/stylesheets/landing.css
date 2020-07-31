@@ -1,0 +1,78 @@
+body {
+    background-color: #000;
+  }
+
+  
+#landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+  }
+
+  #landing-header h1 {
+    color: #fff;
+  }
+  #landing-header h4 {
+    color: #fff;
+  }
+
+  .slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 9s linear infinite; 
+  }
+
+  .slideshow li:nth-child(1) { 
+    background-image: url(https://assets.telegraphindia.com/telegraph/e4f71d4d-ece1-4e5c-98b2-2f40e590149f.jpeg) 
+  }
+  .slideshow li:nth-child(2) { 
+    background-image: url(https://media-exp1.licdn.com/dms/image/C511BAQHQBZN-3vxZOw/company-background_10000/0?e=2159024400&v=beta&t=A8-TxzcWOmuoGiG7P36Za9g_dzywMzM0cXRXXfVEAOo);
+    animation-delay: 3s; 
+  }
+  .slideshow li:nth-child(3) { 
+    background-image: url(http://alumniaffairs.dtu.ac.in/images2/971435_560604467348068_1180735936_n.jpg);
+    animation-delay: 6s; 
+  }
+
+  @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+  }
+  
+  /* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}

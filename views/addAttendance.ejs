@@ -1,0 +1,58 @@
+<%- include("./partials/header") %>
+<div class="container">
+<header class="jumbotron">
+    <div class="container">
+    <h1>Attendance Dashboard</h1>
+        <p>
+        <a class="btn btn-success btn-large" href="/attendance/add/result">Mark attendance</a>
+        <a class="btn btn-danger btn-large" href="/attendance">Try again</a>
+        
+        
+        </p>
+        <p>
+            <form action="/campgrounds" method="GET" class="form-inline" id="campground-search">
+              <div class="form-group">
+                <input type="text" name="search" placeholder="Search if present..." class="form-control">
+              </div>
+            </form>
+           </p>
+    </div>
+</header>
+
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <div class="col-md-3 col-sm-6">
+           <div class="thumbnail">
+                <img src="https://lh3.googleusercontent.com/05dC2imrPVfNVgx23xDX_8RSuHmmev67ODhp8FdPNIOU-mYW6Gs3AyNVJ0CabMEqPq_sJz7xkxFJx6L19NQJ2-McGE2vg5AdLyJlf8eipJVlnZPKPkdSMbHtkJZeI10JYRPE0z1YtX4=w2400">
+                <div class="caption">
+                <h4>XI JINGPING</h4>
+                </div>
+           </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                 <img src="https://lh3.googleusercontent.com/npHY134L9dwuUXxlbE4ESpXKt-peefQuzs19NWN0yIQAc1HI7yuMtZlVq9JeLTQiixlSv1xI5Mf8DGn5jNPcAZKWO7Tzsm7EiKCa9ShsCm0wrmo7ykn5CEEQPnPOF5_X0IS76WVgRDQ=w2400">
+                 <div class="caption">
+                 <h4>DONALD TRUMP</h4>
+                 </div>
+            </div>
+         </div>
+
+         <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                 <img src="https://lh3.googleusercontent.com/hYeIkDyRcoMu-H9J01M0rASzJM69jSlBMi_pDRcYp-UErVBVNmz-72BtUobMHHtaaHixtsutuTE-9F_G9xNhhvQ_E8i7XXW1WGJKKV4J90TXSoQs3kZo7l544VVmNBvmDKasJGBgqVE=w2400">
+                 <div class="caption">
+                 <h4>ABE SHINZO</h4>
+                 </div>
+            </div>
+         </div>
+        
+</div>
+</div>
+
+
+
+
+
+
+
+<%- include("./partials/footer") %>
